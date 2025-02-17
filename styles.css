@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  #controls {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  
+  .active {
+    background-color: aquamarine;
+  }
+  
+  canvas {
+    touch-action: none;
+  }
+
+  button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; /* Makes the button a circle */
+    border: none; /* Remove default borders */
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+
+    outline: 1px solid rgba(255, 255, 255, 0.20);;
+    cursor: pointer;
+    margin: 2px;
+
+        -webkit-tap-highlight-color: transparent; /* Removes the blue flash on mobile */
+        user-select: none; /* Prevents accidental text selection */
+    
+}
+
+/* button:focus {
+    outline: none;
+} */
+
+/* Set background images for each button */
+#dirt {
+    background-image: url("assets/dirtswatch.png");
+}
+
+#grass {
+    background-image: url("assets/grassswatch.png");
+}
+
+#worm {
+    background-image: url("assets/wormswatch.png");
+}
+
+/* Style for active (selected) button */
+.active {
+    outline: 2px solid white; /* White ring around selected pen */
+    outline-offset: 2px;
+}
